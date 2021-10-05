@@ -1,8 +1,10 @@
 'use strict'
 
 const debouncer = require('../dist/lib/debouncer')
+
+const debounceTimeMs = 500
 const callback = jest.fn()
-const debouncedFnRef = debouncer(300, callback)
+const debouncedFnRef = debouncer(debounceTimeMs, callback)
 
 afterEach(() => {
   jest.useRealTimers()
@@ -16,7 +18,6 @@ test('debouncer call once', () => {
   jest.useFakeTimers()
 
   const CALL_TIMES = 100
-
   for (let i = 0; i < CALL_TIMES; i++) {
     debouncedFnRef()
   }
@@ -25,5 +26,6 @@ test('debouncer call once', () => {
 
   jest.runAllTimers()
 
-  expect(callback).toHaveBeenCalledTimes(1)
+  const expectedNumCalled = 1
+  expect(callback).toHaveBeenCalledTimes(expectedNumCalled)
 })

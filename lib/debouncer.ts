@@ -4,16 +4,17 @@
  * @param fn : funtion to apply debounce
  * @returns : debounced function reference
  */
-const debouncer = function (ms: number, fn: Function): Function {
+const debouncer = function (ms: number = 0, fn : Function = () => {}): Function {
   let id: NodeJS.Timeout
 
   return (): void => {
-    if(id) {
+    if (id) {
       clearTimeout(id)
     }
 
     id = setTimeout(() => {
       clearTimeout(id)
+
       fn()
     }, ms)
   }
