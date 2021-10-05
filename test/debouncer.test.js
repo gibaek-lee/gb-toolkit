@@ -1,23 +1,29 @@
 'use strict'
 
-const debouncer = require('../lib/debouncer')
-const debouncedFnRef = debouncer(500, () => console.log('test debounce callback'))
+const debouncer = require('../dist/lib/debouncer')
+const callback = jest.fn()
+const debouncedFnRef = debouncer(300, callback)
 
 afterEach(() => {
-  jest.useFakeTimers()
+  jest.useRealTimers()
 })
 
 test('debounced function reference', () => {
   expect(typeof debouncedFnRef).toBe('function')
 })
 
-test('debounce call once', () => {
-  const CALL_TIMES = 10
+test('debouncer call once', () => {
+  jest.useFakeTimers()
+
+  const CALL_TIMES = 100
 
   for (let i = 0; i < CALL_TIMES; i++) {
     debouncedFnRef()
   }
 
-  expect(setTimeout).toHaveBeenCalledTimes(1)
-  expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 1000)
+  expect(callback).not.toBeCalled()
+
+  jest.runAllTimers()
+
+  expect(callback).toHaveBeenCalledTimes(1)
 })
