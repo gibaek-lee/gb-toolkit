@@ -9,7 +9,7 @@
   },
   "scripts": {
     "tsc-lib": "tsc",
-    "test": "jest"
+    "test": "npm run tsc-lib && jest"
   },
   "repository": {
     "type": "git",
