@@ -1,0 +1,29 @@
+{
+  "name": "gb-toolkit",
+  "version": "1.0.0",
+  "description": "toolkit",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gibaek-lee/gb-toolkit.git"
+  },
+  "keywords": [
+    "toolkit"
+  ],
+  "author": "gibaek.lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gibaek-lee/gb-toolkit/issues"
+  },
+  "homepage": "https://github.com/gibaek-lee/gb-toolkit#readme",
+  "devDependencies": {
+    "jest": "^27.2.4"
+  }
+}
