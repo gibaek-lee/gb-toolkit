@@ -1,11 +1,12 @@
 {
   "name": "gb-toolkit",
-  "version": "0.1.1",
+  "version": "0.1.8",
   "description": "toolkit for javascript",
   "main": "index.js",
   "directories": {
     "lib": "lib",
-    "test": "test"
+    "test": "test",
+    "dist": "dist"
   },
   "scripts": {
     "tsc-lib": "tsc",
@@ -28,7 +29,9 @@
   "files": [
     "index.js",
     "lib",
-    "test"
+    "test",
+    "dist",
+    "tsconfig.json"
   ],
   "author": "gibaek.lee",
   "bin": {

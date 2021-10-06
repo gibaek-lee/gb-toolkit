@@ -1,10 +1,10 @@
 'use strict'
 
-import { throttler } from '../index'
+import gbToolkit from '../index'
 
 const throttleTimeMs = 500
 const callback = jest.fn()
-const throttledFnRef = throttler(throttleTimeMs, callback)
+const throttledFnRef = gbToolkit.throttler(throttleTimeMs, callback)
 
 afterEach(() => {
   jest.useRealTimers()

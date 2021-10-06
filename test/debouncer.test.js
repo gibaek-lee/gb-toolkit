@@ -1,10 +1,10 @@
 'use strict'
 
-import { debouncer } from '../index'
+import gbToolkit from '../index'
 
 const debounceTimeMs = 500
 const callback = jest.fn()
-const debouncedFnRef = debouncer(debounceTimeMs, callback)
+const debouncedFnRef = gbToolkit.debouncer(debounceTimeMs, callback)
 
 afterEach(() => {
   jest.useRealTimers()
