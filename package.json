@@ -1,7 +1,7 @@
 {
   "name": "gb-toolkit",
-  "version": "1.0.0",
-  "description": "toolkit",
+  "version": "0.1.0",
+  "description": "toolkit for javascript",
   "main": "index.js",
   "directories": {
     "lib": "lib",
@@ -16,9 +16,17 @@
     "url": "git+https://github.com/gibaek-lee/gb-toolkit.git"
   },
   "keywords": [
-    "toolkit"
+    "toolkit", "javascript", "typescript"
+  ],
+  "files": [
+    "index.js",
+    "lib",
+    "test"
   ],
   "author": "gibaek.lee",
+  "bin": {
+    "toolkit-install": "index.js"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gibaek-lee/gb-toolkit/issues"

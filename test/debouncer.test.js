@@ -1,6 +1,6 @@
 'use strict'
 
-const debouncer = require('../dist/lib/debouncer')
+const { debouncer } = require('../index.js')
 
 const debounceTimeMs = 500
 const callback = jest.fn()
