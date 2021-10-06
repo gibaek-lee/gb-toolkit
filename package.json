@@ -1,6 +1,6 @@
 {
   "name": "gb-toolkit",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "toolkit for javascript",
   "main": "index.js",
   "directories": {
@@ -24,7 +24,13 @@
   "keywords": [
     "toolkit",
     "javascript",
-    "typescript"
+    "typescript",
+    "frontend",
+    "ui",
+    "debounce",
+    "throttle",
+    "sleep",
+    "pipeline"
   ],
   "files": [
     "index.js",
