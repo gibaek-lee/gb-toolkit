@@ -19,4 +19,4 @@ const throttler = function (ms: number = 0, fn: Function = () => {}): Function {
   }
 }
 
-module.exports = throttler
+export default throttler

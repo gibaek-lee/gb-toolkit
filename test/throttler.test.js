@@ -1,6 +1,6 @@
 'use strict'
 
-const throttler = require('../dist/lib/throttler')
+import { throttler } from '../index'
 
 const throttleTimeMs = 500
 const callback = jest.fn()
@@ -14,7 +14,7 @@ test('throttled function reference', () => {
   expect(typeof throttledFnRef).toBe('function')
 })
 
-test('throttler call more than once', async () => {
+test('throttler call more than once', () => {
   jest.useFakeTimers()
 
   const intervalId = setInterval(throttledFnRef, 10)

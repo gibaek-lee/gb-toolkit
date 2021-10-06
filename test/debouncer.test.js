@@ -1,6 +1,6 @@
 'use strict'
 
-const { debouncer } = require('../index.js')
+import { debouncer } from '../index'
 
 const debounceTimeMs = 500
 const callback = jest.fn()

@@ -11,12 +11,19 @@
     "tsc-lib": "tsc",
     "test": "npm run tsc-lib && jest"
   },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gibaek-lee/gb-toolkit.git"
   },
   "keywords": [
-    "toolkit", "javascript", "typescript"
+    "toolkit",
+    "javascript",
+    "typescript"
   ],
   "files": [
     "index.js",
@@ -25,7 +32,7 @@
   ],
   "author": "gibaek.lee",
   "bin": {
-    "toolkit-install": "index.js"
+    "gb-toolkit-install": "index.js"
   },
   "license": "ISC",
   "bugs": {
@@ -33,6 +40,8 @@
   },
   "homepage": "https://github.com/gibaek-lee/gb-toolkit#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "babel-jest": "^27.2.4",
     "jest": "^27.2.4"
   }
 }

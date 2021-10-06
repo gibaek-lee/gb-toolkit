@@ -20,4 +20,4 @@ const debouncer = function (ms: number = 0, fn : Function = () => {}): Function 
   }
 }
 
-module.exports = debouncer
+export default debouncer

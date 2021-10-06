@@ -1,8 +1,8 @@
-const debouncer = require('./dist/lib/debouncer')
-const throttler = require('./dist/lib/throttler')
-const sleep = require('./dist/lib/sleep')
+import debouncer from './dist/lib/debouncer'
+import throttler from './dist/lib/throttler'
+import sleep from './dist/lib/sleep'
 
-module.exports = {
+export {
   debouncer,
   throttler,
   sleep
