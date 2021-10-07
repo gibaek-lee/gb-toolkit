@@ -33,6 +33,16 @@ window.addEventListener('click', gbToolkit.throttler(500, () => console.log('thr
 #### pipeline
 ```javascript
 const result = gbToolkit.pipeline(n => n+1, n => n+2, n => n+3)(1)
+console.log(result === 7) // true
+```
+
+### finish-scroll
+```javascript
+const scrollFinishObserver = gbToolkit.finishScroll(50)
+scrollFinishObserver.then(() => {
+  // observe scroll finish every 50ms
+  // do something after scroll finished
+})
 ```
 
 # Testing

@@ -10,7 +10,7 @@
   },
   "scripts": {
     "tsc-lib": "tsc",
-    "test": "npm run tsc-lib && jest"
+    "test": "npm run tsc-lib && jest --env=jsdom"
   },
   "jest": {
     "transform": {
