@@ -30,7 +30,8 @@
     "debounce",
     "throttle",
     "sleep",
-    "pipeline"
+    "pipeline",
+    "finish-scroll"
   ],
   "files": [
     "index.js",
