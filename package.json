@@ -31,7 +31,8 @@
     "throttle",
     "sleep",
     "pipeline",
-    "finish-scroll"
+    "finish-scroll",
+    "range"
   ],
   "files": [
     "index.js",
