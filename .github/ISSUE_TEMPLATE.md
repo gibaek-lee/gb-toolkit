@@ -11,5 +11,6 @@ write subject
 - [ ] /lib/{methodName}.ts
 - [ ] /test/{methodName}.test.js
 - [ ] npm run test
+- [ ] write method usage in README.md
 - [ ] add keywords(methodName) in package.json
 - [ ] (only if you are the last contributer of certain version)npm version up

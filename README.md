@@ -45,6 +45,19 @@ scrollFinishObserver.then(() => {
 })
 ```
 
+### range
+```javascript
+const range1 = gbToolkit.range({ N: 10 }) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+const range2 = gbToolkit.range({ N: 5, start: 2, delta: 2 }) // [2, 4, 6, 8, 10]
+range1.forEach(r => {
+  // do something
+})
+range2.reduce((a, c) => {
+  // do something
+  return a
+}, 0)
+```
+
 # Testing
 Under the /test folder, using jest
 ```bash
